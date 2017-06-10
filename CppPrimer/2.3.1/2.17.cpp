@@ -2,7 +2,8 @@
 
 int main(int arg, char *argv[])
 {
-    int i;
+    // Added initialization to avoid undefined behavior.
+    int i  = 0;
     int &ri = i;
 
     i = 5;
