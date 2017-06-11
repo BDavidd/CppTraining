@@ -1,5 +1,3 @@
-#include <iostream>
-
 int main(int arc, char *argv[])
 {
     // Undefined: basic types defined inside a block must be initialized.
