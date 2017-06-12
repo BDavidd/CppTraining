@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
     SalesData sale;
     double price = 0.0;
-    
+
     std::cout << "Enter a transaction: " << std::endl;
     std::cin >> sale.bookNo >> sale.unitsSold >> price;
     sale.revenue = sale.unitsSold * price;
