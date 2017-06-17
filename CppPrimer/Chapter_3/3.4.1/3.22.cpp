@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
         "more random sample text"
     };
 
-    for (auto it = text.begin(); it != text.cend() && !it->empty(); ++it)
+    for (auto it = text.begin(); it != text.end() && !it->empty(); ++it)
     {
         for (auto &ch : *it)
         {
