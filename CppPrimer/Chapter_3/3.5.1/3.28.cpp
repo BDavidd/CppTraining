@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 {
     // Contains 10 empty strings.
     std::cout << "sa: ";
-    for (const auto str : sa)
+    for (const auto &str : sa)
     {
         std::cout << str << ' ';
     }
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
     // Contains 10 empty strings.
     std::string sa2[10];
     std::cout << "sa2: ";
-    for (const auto str : sa2)
+    for (const auto &str : sa2)
     {
         std::cout << str << ' ';
     }
