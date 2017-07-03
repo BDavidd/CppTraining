@@ -10,8 +10,8 @@ int main(int argc, char *argv[])
     // The result of dividing it by the size of an int is its size.
     std::cout << sizeof(x) / sizeof(*x) << std::endl;
 
-    // My current system has 64 bit memory addresses.
-    // A pointer has a size of 64 bits (a memory address), an int has a size
+    // My current system has 64 bit memory words.
+    // A pointer has a size of 64 bits (a memory word), an int has a size
     // of 32 bits, so the result is 2.
     std::cout << sizeof(p) / sizeof(*p) << std::endl;
 
