@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     char *pc = &c;
     void *pv = nullptr;
 
-    // pv = (void*)ps; 
+    // pv = (void*)ps;
     string *pps = const_cast<string*>(ps);
     pv = static_cast<void*>(pps);
 
