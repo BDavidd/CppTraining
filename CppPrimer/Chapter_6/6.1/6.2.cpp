@@ -1,6 +1,6 @@
+#include "6.2.hpp"
 #include <iostream>
 #include <string>
-#include "6.2.hpp"
 
 int main()
 {
