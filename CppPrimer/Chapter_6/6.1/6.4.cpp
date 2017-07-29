@@ -1,6 +1,5 @@
+#include "6.4.hpp"
 #include <iostream>
-
-void computeFactorial();
 
 int main()
 {
