@@ -1,10 +1,5 @@
+#include "6.5.hpp"
 #include <iostream>
-
-template <class T>
-T absolute(T value)
-{
-	return (value >= 0) ? value : -value;
-}
 
 int main()
 {

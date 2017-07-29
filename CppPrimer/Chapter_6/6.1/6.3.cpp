@@ -1,8 +1,7 @@
+#include "6.3.hpp"
 #include <iostream>
 #include <stdexcept>
 #include <sstream>
-
-int computeFactorial(int value);
 
 int main(int argc, char *argv[])
 {
@@ -37,8 +36,8 @@ int main(int argc, char *argv[])
 
 int computeFactorial(int value)
 {
-	// int overflows when computing a factorial greater than 16.
-	if (value < 1 || value > 16)
+	// int overflows when computing a factorial greater than 12.
+	if (value < 1 || value > 12)
 	{
 		throw (std::invalid_argument("Invalid argument received"));
 	}

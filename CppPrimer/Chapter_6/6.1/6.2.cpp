@@ -1,5 +1,16 @@
+#include "6.2.hpp"
 #include <iostream>
 #include <string>
+
+int main()
+{
+	std::cout << "f: " << f() << std::endl;
+	f2(5);
+	std::cout << "calc(1,2) = " << calc(1, 2) << std::endl;
+	std::cout << "square(10.5) = " << square(10.5) << std::endl;
+
+	return 0;
+}
 
 // The function should return a string.
 std::string /*int*/ f()
@@ -25,14 +36,4 @@ int calc(int v1, int v2 /*v1*/)
 double square(double x)
 {
 	return x * x;
-}
-
-int main()
-{
-	std::cout << "f: " << f() << std::endl;
-	f2(5);
-	std::cout << "calc(1,2) = " << calc(1, 2) << std::endl;
-	std::cout << "square(10.5) = " << square(10.5) << std::endl;
-
-	return 0;
 }
