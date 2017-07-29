@@ -1,4 +1,6 @@
-#pragma once
+#ifndef SIX_TWO_HPP
+#define SIX_TWO_HPP
+
 #include <string>
 
 /*!
@@ -27,3 +29,5 @@ int calc(int v1, int v2);
 	\return x squared.
  */
 double square(double x);
+
+#endif // !SIX_TWO_HPP
