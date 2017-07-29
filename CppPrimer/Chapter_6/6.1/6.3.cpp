@@ -1,8 +1,7 @@
+#include "6.3.hpp"
 #include <iostream>
 #include <stdexcept>
 #include <sstream>
-
-int computeFactorial(int value);
 
 int main(int argc, char *argv[])
 {
