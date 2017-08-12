@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(int argc, char *argv[])
+int main()
 {
     // Scores contains 11 unsigned ints having undefined values.
     // The scores that are not modified will keep the undefined (random) values.

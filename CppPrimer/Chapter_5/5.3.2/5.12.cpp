@@ -76,9 +76,14 @@ int main()
                     case 'i':
                         ++fiCount;
                         break;
+					default:
+						break;
                     }
                 }
                 break;
+
+			default:
+				break;
             }
         }
     }

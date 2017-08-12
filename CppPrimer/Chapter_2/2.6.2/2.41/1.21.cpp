@@ -1,5 +1,5 @@
-#include <iostream>
 #include <string>
+#include <iostream>
 
 struct SalesData 
 {
@@ -8,7 +8,7 @@ struct SalesData
     double revenue = 0.0;
 };
 
-int main(int argc, char *argv[])
+int main()
 {
     SalesData sale1;
     SalesData sale2;

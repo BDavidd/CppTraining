@@ -1,8 +1,8 @@
 #include <iostream>
 
-int main(int argc, char *argv[])
+int main()
 {
-    int *point = nullptr;
+    int* point = nullptr;
     int val = 0;
 
     point = &val;

@@ -1,8 +1,8 @@
+#include "SalesData.h"
 #include <iostream>
 #include <map>
-#include "SalesData.h"
 
-int main(int argc, char *argv[])
+int main()
 {
     SalesData sale;
     double price = 0.0;

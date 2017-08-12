@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iterator>
 
-int main(int argc, char *argv[])
+int main()
 {
     int intArr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 

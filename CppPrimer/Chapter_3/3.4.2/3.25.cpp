@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int main(int argc, char *argv[])
+int main()
 {
     std::vector<unsigned> scores(11, 0);
     unsigned grade = 0;

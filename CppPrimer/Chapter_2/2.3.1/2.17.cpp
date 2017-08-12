@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(int arg, char *argv[])
+int main()
 {
     // Added initialization to avoid undefined behavior.
     int i  = 0;

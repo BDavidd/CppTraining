@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int main(int argc, char *argv[])
+int main()
 {
     std::vector<int> vec {0, 1, 2, 3};
 

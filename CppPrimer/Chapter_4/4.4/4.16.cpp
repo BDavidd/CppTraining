@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     }
 
     // What was probably intended.
-    if ((pt = getPtr()) != 0)
+    if ((pt = getPtr()) != nullptr)
     {
         std::cout << "Assignment before comparison." << std::endl;
     }

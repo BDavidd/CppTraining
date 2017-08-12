@@ -7,7 +7,7 @@ struct SalesData
     double revenue = 0.0;
 };
 
-int main(int argc, char *argv[])
+int main()
 {
     return 0;
 }

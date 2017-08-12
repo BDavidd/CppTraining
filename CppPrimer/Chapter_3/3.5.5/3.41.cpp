@@ -2,7 +2,7 @@
 #include <vector>
 #include <iterator>
 
-int main(int argc, char *argv[])
+int main()
 {
     const int intArr[] = {1, 2, 3, 4, 5, 6, 7};
 

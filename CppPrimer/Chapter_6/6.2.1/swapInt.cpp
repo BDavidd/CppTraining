@@ -1,5 +1,4 @@
 #include "swapInt.hpp"
-#include <cctype>
 
 void swapInt(int *param1, int *param2)
 {

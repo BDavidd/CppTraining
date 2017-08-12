@@ -1,9 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <limits>
 
-int main(int argc, char *argv[])
+int main()
 {
     std::vector<int> values;
     int input = 0;

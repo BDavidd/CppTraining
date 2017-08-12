@@ -57,6 +57,9 @@ int main()
             case '\t':
                 ++tabCount;
                 break;
+
+			default:
+				break;
             }
         }
     }

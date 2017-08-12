@@ -3,7 +3,7 @@
 #include <string>
 #include <cctype>
 
-int main(int argc, char *argv[])
+int main()
 {
     std::vector<std::string> text {
         "some random sample text",

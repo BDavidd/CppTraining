@@ -1,4 +1,4 @@
-int main(int argc, char *argv[])
+int main()
 {
     // Initialize p with the address of null, instead of it's value.
     int null = 0;

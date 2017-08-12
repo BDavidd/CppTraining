@@ -1,6 +1,6 @@
 #include <vector>
 
-int main(int argc, char *argv[])
+int main()
 {
     // This will cause a segmentation fault when accessing the element at index 0 since ivec has no elements.
     // std::vector<int> ivec;

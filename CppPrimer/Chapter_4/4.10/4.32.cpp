@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(int argc, char *argv[])
+int main()
 {
     constexpr int size = 5;
     int ia[size] { 1, 2, 3, 4, 5 };

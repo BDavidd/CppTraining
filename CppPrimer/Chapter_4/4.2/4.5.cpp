@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(int argc, char *argv[])
+int main()
 {
     // -86
     std::cout << -30 * 3 + 21 / 5 << std::endl;

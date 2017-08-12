@@ -1,9 +1,8 @@
 #include <iostream>
 #include <iterator>
-#include <cstddef>
 #include <vector>
 
-int main(int argc, char *argv[])
+int main()
 {
     int array1[] = {0, 1, 2, 3, 4, 5, 6, 7, 8};
     int array2[] = {0, 1, 3, 3, 4, 5, 6, 7, 8};

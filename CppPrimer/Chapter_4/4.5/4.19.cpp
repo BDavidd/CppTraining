@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int main(int argc, char *argv[])
+int main()
 {
     int i = 1;
     int *ptr = &i;
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     // What could be desired is incrementing the variable that ptr points to, after 
     // checking if its value is != 0.
     // && specifies evaluation order so the expression is safe.
-    if (ptr != 0 && (*ptr)++)
+    if (ptr != nullptr && (*ptr)++)
     {
         std::cout << "*ptr: " << *ptr << std::endl;
     }

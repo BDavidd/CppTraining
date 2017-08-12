@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(int argc, char *argv[])
+int main()
 {
     // Makes the value of i equal to the square of its initial value.
     int i = 42;

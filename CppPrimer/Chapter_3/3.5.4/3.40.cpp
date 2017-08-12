@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstring>
 
-int main(int argc, char *argv[])
+int main()
 {
     const char str1[] = "Hello";
     const char str2[] = "world!";

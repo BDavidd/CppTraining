@@ -1,7 +1,6 @@
 #include <iostream>
-#include <cstddef>
 
-int main(int argc, char *argv[])
+int main()
 {
     constexpr size_t rowCount = 3;
     constexpr size_t columnCount = 4;

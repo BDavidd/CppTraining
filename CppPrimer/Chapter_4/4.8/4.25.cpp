@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(int argc, char* argv[])
+int main()
 {
     // q = 01110001
     // q is promoted to an int when applying the bitwise not

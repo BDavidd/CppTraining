@@ -1,4 +1,4 @@
-int main(int arc, char *argv[])
+int main()
 {
     // Undefined: basic types defined inside a block must be initialized.
     int i;

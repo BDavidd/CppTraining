@@ -1,11 +1,11 @@
 #include <iostream>
 
-int main(int arc, char *argv[])
+int main()
 {
     short shortVal = 32767;
     std::cout << ++shortVal << std::endl; 
 
-    ushort ushortVal = 65535;
+    unsigned short ushortVal = 65535;
     std::cout << ++ushortVal << std::endl;
 
     int x = 3;
