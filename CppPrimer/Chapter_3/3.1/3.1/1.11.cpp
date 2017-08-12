@@ -5,7 +5,7 @@ using std::cin;
 using std::cerr;
 using std::endl;
 
-int main(int argc, char *argv[])
+int main()
 {
     int a = 0;
     int b = 0;

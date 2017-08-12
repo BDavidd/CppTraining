@@ -1,4 +1,4 @@
-int main(int argc, char *argv[])
+int main()
 {
     // Top-level const.
     const int v2 = 0;

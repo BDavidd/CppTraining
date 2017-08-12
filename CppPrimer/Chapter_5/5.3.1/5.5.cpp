@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 
-int main(int argc, char *argv[])
+int main()
 {
     std::vector<std::string> grades {"F", "D", "C", "B", "A", "A++"};
 

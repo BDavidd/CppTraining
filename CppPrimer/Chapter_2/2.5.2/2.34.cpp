@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(int argc, char *argv[])
+int main()
 {
     // Declarations from previous examples.
     int i = 0;

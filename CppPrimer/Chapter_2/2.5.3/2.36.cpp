@@ -1,8 +1,10 @@
 #include <iostream>
 
-int main(int argc, char *argv[])
+int main()
 {
     int a = 3;
+
+	int &b = a;
 
     // c is an int.
     decltype(a) c = a;

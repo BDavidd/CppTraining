@@ -4,7 +4,7 @@
 std::string sa[10];
 int ia[10];
 
-int main(int argc, char *argv[])
+int main()
 {
     // Contains 10 empty strings.
     std::cout << "sa: ";

@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(int argc, char *argv[])
+int main()
 {
     // Correctly defining the variables from the previous exercise.
     

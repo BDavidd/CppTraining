@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(int argc, char *argv[])
+int main()
 {
     int i = 2;
     double d = 3.0;

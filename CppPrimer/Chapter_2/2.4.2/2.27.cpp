@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(int argc, char *argv[])
+int main()
 {
     // Ok, initializing an int with the value -1.
     int i = -1;

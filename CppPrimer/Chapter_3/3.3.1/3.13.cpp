@@ -13,7 +13,7 @@ void printVector(T vector, std::string name)
     std::cout << std::endl;
 }
 
-int main(int argc, char *argv[])
+int main()
 {
     // No elements.
     std::vector<int> v1;

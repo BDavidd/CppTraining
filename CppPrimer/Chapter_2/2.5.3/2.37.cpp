@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(int argc, char *arv[])
+int main()
 {
     int a = 3;
     int b = 4;

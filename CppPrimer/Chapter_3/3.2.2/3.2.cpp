@@ -2,7 +2,7 @@
 #include <string>
 #include <limits>
 
-int main(int argc, char *argv[])
+int main()
 {
     std::string wordFlag;
 

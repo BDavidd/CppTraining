@@ -1,4 +1,4 @@
-int main(int argc, char *argv[])
+int main()
 {
     char cval = 0;
     int ival = 1;

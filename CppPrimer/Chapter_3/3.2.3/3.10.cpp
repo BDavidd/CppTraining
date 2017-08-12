@@ -2,7 +2,7 @@
 #include <string>
 #include <cctype>
 
-int main(int argc, char *argv[])
+int main()
 {
     std::string readValue;
 

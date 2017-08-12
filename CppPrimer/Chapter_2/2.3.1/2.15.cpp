@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(int argc, char *argv[])
+int main()
 {
     // Ok, ival is an int and it is initialised with the value '1'.
     int ival = 1.01;

@@ -2,7 +2,7 @@
 
 int txt_size();
 
-int main(int argc, char *argv[])
+int main()
 {
     unsigned buf_size = 1024;
 

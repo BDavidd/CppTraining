@@ -1,4 +1,4 @@
-int main(int argc, char *argv[])
+int main()
 {
     // Variable declarations from the previous exercise.
     const int v2 = 0;

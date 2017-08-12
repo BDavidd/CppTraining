@@ -2,7 +2,7 @@
 #include <cstring>
 #include <string>
 
-int main(int argc, char *argv[])
+int main()
 {
     std::string firstString;
     std::string secondString;

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int main(int argc, char *argv[])
+int main()
 {
     // This is the preferred way, since it is the shortest.
     std::vector<int> ivec1(10, 42);

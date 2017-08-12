@@ -39,6 +39,9 @@ int main()
         case 'U':
             ++uCount;
             break;
+
+		default:
+			break;
         }
     }
 

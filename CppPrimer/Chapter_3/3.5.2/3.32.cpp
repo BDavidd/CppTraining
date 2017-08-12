@@ -4,7 +4,7 @@
 void copyArray();
 void copyVector();
 
-int main(int argc, char *argv[])
+int main()
 {
     copyArray();
     copyVector();

@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main(int argc, char *argv[])
+int main()
 {
     double dval = 1.0;
     int ival = 1;
@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     // Error: cannot assign pi (int*) to ival (int).
     // dval = ival = pi = 0;
     dval = ival = 0;
-    pi = 0;
+    pi = nullptr;
 
     // Suppress unused variable compiler warning.
     (void)pi;
