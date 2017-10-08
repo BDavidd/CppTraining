@@ -33,3 +33,30 @@
 26 31 41 41 59 58  // compare 58 to 59, copy 58 to the right
 26 31 41 41 59 59  // compare 58 to 41, insert 58 in the previous position of 59, 4
 26 31 41 41 58 59  // complete
+
+2.1-3)
+LINEAR-SEARCH(A, v)
+    for i = 0 to A.length - 1
+        if A[i] == v
+            return i
+    return NIL
+
+The loop invariant is the array A[0...i-1] having the property that it doesn't contain v.
+
+Initialization: Before the loop, i is 0, the subarray is empty so it doesn't contain v
+Maintenance: In the loop, if v is found, then the function returns, else the invariant becomes A[0...i] and doesn't contain v
+Termination: The loop terminates either when v is found, or when i reaches n, meaning that v was not found.
+
+2.1-4)
+Input: Two sequences of n binary numbers (having values 0 or 1) A = <a1, a2,...,an> 
+       and B = <b1, b2,...,bn> representing two integers.
+Output: A sequence of n+1 binary numbers C = <c1, c2,...,cn+1> representing the sum of A and B, C = A + B.
+
+BINARY-ADD(A, B, C)
+    for j = 0 to C.length-1
+        c[j] = 0
+    
+    for i = A.length-1 downto 0
+        sum = A[i] + B[i] + C[i + 1]
+        C[i + 1] = sum % 2
+        C[i] = sum / 2 
