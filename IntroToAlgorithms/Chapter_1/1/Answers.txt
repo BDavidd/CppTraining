@@ -1,0 +1,16 @@
+1.1-1) Sorting - listing the items from a store based on the price
+1.1-2) Memory used, complexity, implementation time.
+1.1-3) Linked lists 
+       Strengths - in-place insert and delete, good for big data sets (no need for contiguous memory segments) 
+       Limitations - linear look-up
+1.1-4) The problems are similar since they both attempt to find a path (the shortest one).
+       They are different because the traveling-salesman problem also requires intermediate stops and a return route.
+1.1-5) The best solution - calculating the trajectory of a space shuttle
+       Approximately the best - calculating the amount of water required to water crops
+
+1.2-1) Video games - rendering, graphics, physics
+1.2-2) 64 * n * lgn < 8 * n * n
+       64 * lgn < 8 * n
+       8 * lgn < n
+       assuming n > 1 , the answer is 44
+1.2-3) 15
