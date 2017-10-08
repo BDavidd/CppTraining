@@ -7,3 +7,10 @@
        They are different because the traveling-salesman problem also requires intermediate stops and a return route.
 1.1-5) The best solution - calculating the trajectory of a space shuttle
        Approximately the best - calculating the amount of water required to water crops
+
+1.2-1) Video games - rendering, graphics, physics
+1.2-2) 64 * n * lgn < 8 * n * n
+       64 * lgn < 8 * n
+       8 * lgn < n
+       assuming n > 1 , the answer is 44
+1.2-3) 15
