@@ -152,7 +152,7 @@ public:
 	}
 };
 
-class ColorSpecification : public ISpecification<Product>
+class ColorSpecification final : public ISpecification<Product>
 {
 public:
 	explicit ColorSpecification(const Color color)
