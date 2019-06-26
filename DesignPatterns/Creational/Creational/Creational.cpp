@@ -1,14 +1,14 @@
 #include "Srp.h"
 #include "Ocp.h"
 #include "Lsp.h"
+#include "BoostDi.h"
 
-#include <iostream>
-#include <vector>
 
 int main()
 {
 	//ocpMain();
-	lspMain();
+	//lspMain();
+	dinMain();
 
 	return 0;
 }
