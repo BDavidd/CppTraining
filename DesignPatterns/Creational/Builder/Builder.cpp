@@ -47,9 +47,15 @@ void withoutBuilderMain()
 void withBuilderMain()
 {
 	HtmlBuilder builder{ "ul" };
-	builder.addChild("li", "hello");
-	builder.addChild("li", "world");
+	builder.addChild("li", "hello")
+		   .addChild("li", "world");
+
+	HtmlElement e = HtmlElement::build("ul").addChild("li", "hello");
+
+	HtmlElement* ee = HtmlElement::create("ul")->addChildPtr("li", "world");
+
 	std::cout << builder.str();
+	std::cout << e.str();
 }
 
 int main()

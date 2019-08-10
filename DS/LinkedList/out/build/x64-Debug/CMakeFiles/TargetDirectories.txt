@@ -1,0 +1,5 @@
+C:/Users/barzi/Documents/C++/CppTraining/DS/LinkedList/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/barzi/Documents/C++/CppTraining/DS/LinkedList/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/barzi/Documents/C++/CppTraining/DS/LinkedList/out/build/x64-Debug/LinkedList/CMakeFiles/edit_cache.dir
+C:/Users/barzi/Documents/C++/CppTraining/DS/LinkedList/out/build/x64-Debug/LinkedList/CMakeFiles/LinkedList.dir
+C:/Users/barzi/Documents/C++/CppTraining/DS/LinkedList/out/build/x64-Debug/LinkedList/CMakeFiles/rebuild_cache.dir

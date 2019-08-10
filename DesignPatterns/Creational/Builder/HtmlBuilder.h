@@ -5,6 +5,9 @@
 #include <string>
 #include <utility>
 #include <vector>
+#include <memory>
+
+class HtmlBuilder;
 
 
 class HtmlElement
@@ -16,6 +19,10 @@ public:
 		, text{std::move(text)}
 	{	
 	}
+
+	static HtmlBuilder build(const std::string& rootName);
+
+	static std::unique_ptr<HtmlBuilder> create(const std::string& rootName);
 
 	void addElement(HtmlElement e)
 	{
@@ -46,7 +53,7 @@ private:
 	std::string name;
 	std::string text;
 	std::vector<HtmlElement> children;
-	constexpr static size_t indentSize = 4;
+	static constexpr size_t indentSize = 4;
 };
 
 class HtmlBuilder
@@ -58,10 +65,28 @@ public:
 		
 	}
 
-	void addChild(std::string childName, std::string childText)
+	HtmlBuilder& addChild(std::string childName, std::string childText)
 	{
 		HtmlElement e(std::move(childName), std::move(childText));
 		root.addElement(e);
+		return *this;
+	}
+
+	HtmlBuilder* addChildPtr(std::string childName, std::string childText)
+	{
+		HtmlElement e(std::move(childName), std::move(childText));
+		root.addElement(e);
+		return this;
+	}
+
+	operator HtmlElement() const
+	{
+		return root;
+	}
+
+	operator HtmlElement*() const
+	{
+		return &root;
 	}
 
 	std::string str() const
@@ -72,5 +97,15 @@ public:
 private:
 	HtmlElement root;
 };
+
+HtmlBuilder HtmlElement::build(const std::string& rootName)
+{
+	return HtmlBuilder{ rootName };
+}
+
+inline std::unique_ptr<HtmlBuilder> HtmlElement::create(const std::string& rootName)
+{
+	return std::make_unique<HtmlBuilder>(rootName);
+}
 
 #endif
