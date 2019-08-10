@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/ovidiu/Documents/barzi/CppTraining/DS/LinkedList/LinkedList/build",
+  "command": "/usr/bin/clang++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -std=gnu++14 -o CMakeFiles/LinkedList.dir/Node.cpp.o -c /Users/ovidiu/Documents/barzi/CppTraining/DS/LinkedList/LinkedList/Node.cpp",
+  "file": "/Users/ovidiu/Documents/barzi/CppTraining/DS/LinkedList/LinkedList/Node.cpp"
+},
+{
+  "directory": "/Users/ovidiu/Documents/barzi/CppTraining/DS/LinkedList/LinkedList/build",
+  "command": "/usr/bin/clang++    -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk   -std=gnu++14 -o CMakeFiles/LinkedList.dir/LinkedList.cpp.o -c /Users/ovidiu/Documents/barzi/CppTraining/DS/LinkedList/LinkedList/LinkedList.cpp",
+  "file": "/Users/ovidiu/Documents/barzi/CppTraining/DS/LinkedList/LinkedList/LinkedList.cpp"
+}
+]

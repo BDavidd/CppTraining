@@ -3,7 +3,12 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
+project(LinkedList)
+
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 # Add source to this project's executable.
-add_executable (LinkedList "LinkedList.cpp" "LinkedList.h")
+add_executable (LinkedList "Node.cpp" "Node.h" "LinkedList.cpp" "LinkedList.h")
 
 # TODO: Add tests and install targets if needed.

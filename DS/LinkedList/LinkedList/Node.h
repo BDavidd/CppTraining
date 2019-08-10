@@ -42,6 +42,16 @@ public:
 		return *this;
 	}
 
+	bool operator==(const Node& rhs)
+	{
+		return mValue == rhs.value();
+	}
+
+	bool operator==(const T& rhs)
+	{
+		return mValue == rhs;
+	}
+	
 	std::shared_ptr<Node<T>> next();
 	void setNext(std::shared_ptr<Node<T>> next);
 	

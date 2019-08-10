@@ -10,13 +10,25 @@ template<typename T>
 class LinkedList
 {
 public:
+	LinkedList() = default;
+	LinkedList(const std::initializer_list<T>& list);
+	~LinkedList() = default;
+
 	std::shared_ptr<Node<T>> head() const;
-	void add(T value);
 	void addHead(T value);
 	void addTail(T value);
 
+	void addHead(std::shared_ptr<Node<T>> node);
+	void addTail(std::shared_ptr<Node<T>> node);
+
 	void removeHead();
+	void removeTail();
+	void removeFirst(T value);
+	void removeFirst(std::shared_ptr<Node<T>> node);
+	void removeAll(T value);
+	void removeAll(std::shared_ptr<Node<T>> node);
 	
+	size_t size();
 	void clear();
 
 	friend std::ostream& operator<<(std::ostream& os, const LinkedList& obj)
@@ -31,6 +43,10 @@ public:
 	}
 
 private:
-	std::shared_ptr<Node<T>> mHead;
-	std::shared_ptr<Node<T>> mTail;
+	void add(std::shared_ptr<Node<T>> node, bool atHead);
+	void remove(T value, bool removeAll);
+
+	std::shared_ptr<Node<T>> mHead = nullptr;
+	std::shared_ptr<Node<T>> mTail = nullptr;
+	size_t mSize = 0;
 };

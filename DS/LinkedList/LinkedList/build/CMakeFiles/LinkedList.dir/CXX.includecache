@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ovidiu/Documents/barzi/CppTraining/DS/LinkedList/LinkedList/LinkedList.cpp
+LinkedList.h
+/Users/ovidiu/Documents/barzi/CppTraining/DS/LinkedList/LinkedList/LinkedList.h
+Node.h
+/Users/ovidiu/Documents/barzi/CppTraining/DS/LinkedList/LinkedList/Node.h
+iostream
+-
+
+/Users/ovidiu/Documents/barzi/CppTraining/DS/LinkedList/LinkedList/LinkedList.h
+Node.h
+/Users/ovidiu/Documents/barzi/CppTraining/DS/LinkedList/LinkedList/Node.h
+memory
+-
+ostream
+-
+
+/Users/ovidiu/Documents/barzi/CppTraining/DS/LinkedList/LinkedList/Node.h
+memory
+-
+iostream
+-
+ostream
+-
+
