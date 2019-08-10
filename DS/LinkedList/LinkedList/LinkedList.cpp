@@ -16,9 +16,17 @@ LinkedList<T>::LinkedList(const std::initializer_list<T>& list)
 }
 
 template <typename T>
-std::shared_ptr<Node<T>> LinkedList<T>::head() const
+Node<T>* LinkedList<T>::begin()
 {
-	return mHead;
+	std::cout << __FUNCTION__ << mHead->value() << " " << mHead.get() << std::endl;
+	return mHead.get();
+}
+
+template <typename T>
+Node<T>* LinkedList<T>::end()
+{
+	std::cout << __FUNCTION__ << mTail->value() << " " << mTail.get() << std::endl;
+	return mTail.get();
 }
 
 template <typename T>
@@ -38,26 +46,13 @@ void LinkedList<T>::addTail(T value)
 template<typename T>
 void LinkedList<T>::addHead(std::shared_ptr<Node<T>> node)
 {
-	if (mTail == nullptr)
-	{
-		mTail = node;
-	}
-	node->setNext(mHead);
-	mHead = node;
+	add(node, true);
 }
 
 template<typename T>
 void LinkedList<T>::addTail(std::shared_ptr<Node<T>> node)
 {
-	if (mHead == nullptr)
-	{
-		mHead = node;
-	}
-	if (mTail)
-	{
-		mTail->setNext(node);
-	}
-	mTail = node;
+	add(node, false);
 }
 
 template <typename T>
@@ -101,6 +96,7 @@ void LinkedList<T>::removeAll(std::shared_ptr<Node<T>> node)
 template <typename T>
 void LinkedList<T>::add(std::shared_ptr<Node<T>> node, bool atHead)
 {
+	++mSize;
 	if (atHead)
 	{
 		node->setNext(mHead);
@@ -114,7 +110,7 @@ void LinkedList<T>::add(std::shared_ptr<Node<T>> node, bool atHead)
 		}
 		mTail = node;
 	}
-	
+
 	if (mTail == nullptr)
 	{
 		mTail = node;
@@ -239,16 +235,22 @@ int main()
 		std::cout << list << std::endl;
 
 		list.removeFirst(2);
-		std::cout << list << std::endl;
+		std::cout << list << "size: " << list.size() << std::endl;
 
 		list.removeFirst(0);
-		std::cout << list << std::endl;
+		std::cout << list << "size: " << list.size() << std::endl;
 
 		list.removeFirst(4);
-		std::cout << list << std::endl;
+		std::cout << list << "size: " << list.size() << std::endl;
 
 		list.removeFirst(std::make_shared<Node<int>>(1));
-		std::cout << list << std::endl;
+		std::cout << list << "size: " << list.size() << std::endl;
+
+		for (Node<int> x : list)
+		{
+			std::cout << x << ' ';
+		}
+		std::cout << std::endl;
 	}
 	
 	return 0;

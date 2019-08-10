@@ -14,7 +14,9 @@ public:
 	LinkedList(const std::initializer_list<T>& list);
 	~LinkedList() = default;
 
-	std::shared_ptr<Node<T>> head() const;
+	Node<T>* begin();
+	Node<T>* end();
+
 	void addHead(T value);
 	void addTail(T value);
 

@@ -62,6 +62,20 @@ public:
 		return os << obj.mValue;
 	}
 
+	Node<T>* operator++()
+	{
+		std::cout << __FUNCTION__ << std::endl;
+		return this->next().get();
+	}
+
+	Node<T>* operator++(int)
+	{
+		std::cout << __FUNCTION__ << std::endl;
+		Node<T>* result(this);
+        ++(this);
+    	return result; 
+	}
+
 private:
 	std::shared_ptr<Node<T>> mNext;
 	T mValue;
