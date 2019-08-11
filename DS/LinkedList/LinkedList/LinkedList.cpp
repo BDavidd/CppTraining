@@ -178,6 +178,24 @@ bool LinkedList<T>::contains(T value)
 }
 
 template <typename T>
+void LinkedList<T>::reverse()
+{
+	mTail = mHead;
+	auto current = mHead;
+	std::shared_ptr<Node<T>> prev;
+	std::shared_ptr<Node<T>> next;
+	while (current)
+	{
+		next = current->next();
+		current->setNext(prev);
+
+		prev = current;
+		current = next;
+	}
+	mHead = prev;
+}
+
+template <typename T>
 size_t LinkedList<T>::size()
 {
 	return mSize;
@@ -253,6 +271,10 @@ int main()
 
 	{
 		LinkedList<int> list = { 0, 1, 2, 2, 3, 4 };
+		std::cout << list << std::endl;
+
+		list.reverse();
+
 		std::cout << list << std::endl;
 
 		list.removeFirst(2);

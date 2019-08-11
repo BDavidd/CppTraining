@@ -32,6 +32,8 @@ public:
 
 	std::shared_ptr<Node<T>> find(T value);
 	bool contains(T value);
+
+	void reverse();
 	
 	size_t size();
 	void clear();
