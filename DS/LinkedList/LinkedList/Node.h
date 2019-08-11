@@ -42,6 +42,12 @@ public:
 		return *this;
 	}
 
+	bool operator!=(Node* rhs)
+	{
+		std::cout << __FUNCTION__ << std::endl;
+		return this != rhs;
+	}
+
 	bool operator==(const Node& rhs)
 	{
 		return mValue == rhs.value();
@@ -55,7 +61,7 @@ public:
 	std::shared_ptr<Node<T>> next();
 	void setNext(std::shared_ptr<Node<T>> next);
 	
-	T value();
+	T value() const;
 
 	friend std::ostream& operator<<(std::ostream& os, const Node& obj)
 	{
@@ -106,7 +112,7 @@ void Node<T>::setNext(std::shared_ptr<Node<T>> next)
 }
 
 template<typename T>
-T Node<T>::value()
+T Node<T>::value() const
 {
 	return mValue;
 }

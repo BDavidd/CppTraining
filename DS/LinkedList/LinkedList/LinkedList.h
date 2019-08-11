@@ -29,6 +29,9 @@ public:
 	void removeFirst(std::shared_ptr<Node<T>> node);
 	void removeAll(T value);
 	void removeAll(std::shared_ptr<Node<T>> node);
+
+	std::shared_ptr<Node<T>> find(T value);
+	bool contains(T value);
 	
 	size_t size();
 	void clear();

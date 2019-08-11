@@ -157,6 +157,27 @@ void LinkedList<T>::remove(T value, bool removeAll)
 }
 
 template <typename T>
+std::shared_ptr<Node<T>> LinkedList<T>::find(T value)
+{
+	auto current = mHead;
+	while (current)
+	{
+		if (current->value() == value)
+		{
+			return current;
+		}
+		current = current->next();
+	}
+	return nullptr;
+}
+
+template <typename T>
+bool LinkedList<T>::contains(T value)
+{
+	return find(value) != nullptr;
+}
+
+template <typename T>
 size_t LinkedList<T>::size()
 {
 	return mSize;
@@ -246,11 +267,22 @@ int main()
 		list.removeFirst(std::make_shared<Node<int>>(1));
 		std::cout << list << "size: " << list.size() << std::endl;
 
-		for (Node<int> x : list)
+		if (list.find(2))
 		{
-			std::cout << x << ' ';
+			std::cout << "Found a 2" << std::endl;
 		}
-		std::cout << std::endl;
+		else
+		{
+			std::cout << "Didn't find a 2" << std::endl;
+		}
+		if (list.contains(4))
+		{
+			std::cout << "Found a 4" << std::endl;
+		}
+		else
+		{
+			std::cout << "Didn't find a 4" << std::endl;
+		}
 	}
 	
 	return 0;
