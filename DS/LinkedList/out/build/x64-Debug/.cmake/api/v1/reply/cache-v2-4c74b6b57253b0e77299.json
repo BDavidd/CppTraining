@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe"
+			"value" : "C:/PROGRA~2/MICROS~1/2019/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1035,7 +1035,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/barzi/Documents/C++/CppTraining/DS/LinkedList/out/build/x64-Debug"
+			"value" : "C:/Users/barzi/Documents/C++/CppTraining/DS/LinkedList/out/build/x64-Debug/LinkedList"
 		},
 		{
 			"name" : "LinkedList_SOURCE_DIR",
@@ -1047,7 +1047,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/barzi/Documents/C++/CppTraining/DS/LinkedList"
+			"value" : "C:/Users/barzi/Documents/C++/CppTraining/DS/LinkedList/LinkedList"
 		}
 	],
 	"kind" : "cache",

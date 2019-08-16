@@ -44,3 +44,10 @@
 450	620	587137905	LinkedList/LinkedList.exe	b69606b74085e424
 0	443	587137952	LinkedList/CMakeFiles/LinkedList.dir/LinkedList.cpp.obj	efc2b5d7d5ab8b9a
 443	614	587137952	LinkedList/LinkedList.exe	b69606b74085e424
+4	272	587216467	build.ninja	369618d8e060d41d
+0	718	587216468	LinkedList/CMakeFiles/LinkedList.dir/Node.cpp.obj	239fa81f5e1b9434
+5	756	587216468	LinkedList/CMakeFiles/LinkedList.dir/LinkedList.cpp.obj	101f53837e052a8f
+756	984	587216468	LinkedList/LinkedList.exe	7db1a3e0eed30ec1
+1	572	587216653	LinkedList/CMakeFiles/LinkedList.dir/Node.cpp.obj	239fa81f5e1b9434
+6	586	587216653	LinkedList/CMakeFiles/LinkedList.dir/LinkedList.cpp.obj	101f53837e052a8f
+586	969	587216653	LinkedList/LinkedList.exe	7db1a3e0eed30ec1

@@ -677,14 +677,14 @@
 			"path" : "out/build/x64-Debug/CMakeFiles/3.14.19060802-MSVC_2/CMakeCXXCompiler.cmake"
 		},
 		{
-			"path" : "LinkedList/CMakeLists.txt"
+			"path" : "BinarySearchTree/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/barzi/Documents/C++/CppTraining/DS/LinkedList/out/build/x64-Debug",
-		"source" : "C:/Users/barzi/Documents/C++/CppTraining/DS/LinkedList"
+		"build" : "C:/Users/barzi/Documents/C++/CppTraining/DS/BinarySearchTree/out/build/x64-Debug",
+		"source" : "C:/Users/barzi/Documents/C++/CppTraining/DS/BinarySearchTree"
 	},
 	"version" : 
 	{
